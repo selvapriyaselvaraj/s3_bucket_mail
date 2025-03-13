@@ -5,4 +5,6 @@
     - name: display the messgae
       debug:
         msg: "Welcome"
-   
+      register: display
+
+    - debug: var=display
