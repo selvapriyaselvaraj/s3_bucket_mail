@@ -17,6 +17,9 @@
 
     - name: Capture Screenshot and Send Email
       command: python3 /tmp/diskutilization.py
+      register: utilize_output
+
+    - debug: var=utilize_output
 
     - name: Clean up Python script
       file:
