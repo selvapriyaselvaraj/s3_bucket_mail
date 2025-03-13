@@ -19,7 +19,7 @@
       command: python3 /tmp/diskutilization.py
       register: utilize_output
 
-    - debug: var=utilize_output
+    - debug: var=utilize_output.stdout
 
     - name: Clean up Python script
       file:
