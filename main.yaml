@@ -11,14 +11,14 @@
 
     - name: Copy the Python script
       copy:
-        src: aws_s3_screenshot.py
-        dest: /tmp/aws_s3_screenshot.py
+        src: diskutilization.py
+        dest: /tmp/diskutilization.py
         mode: "0755"
 
     - name: Capture Screenshot and Send Email
-      command: python3 /tmp/aws_s3_screenshot.py
+      command: python3 /tmp/diskutilization.py
 
     - name: Clean up Python script
       file:
-        path: /tmp/aws_s3_screenshot.py
+        path: /tmp/diskutilization.py
         state: absent
