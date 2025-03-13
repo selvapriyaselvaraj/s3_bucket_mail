@@ -1,0 +1,8 @@
+---
+- name: tesint the file
+  hosts: localhost
+  tasks: 
+    - name: display the messgae
+      debug:
+        msg: "Welcome"
+   
