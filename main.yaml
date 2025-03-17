@@ -13,6 +13,14 @@
       debug:
         var: ansible_python_interpreter
 
+    - name: Debug environment variables
+      command: env
+      register: env_output
+
+    - name: whoami
+      command: whoami
+      register: user_output
+
     - name: Copy the Python script
       copy:
         src: diskutilization.py
