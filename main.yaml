@@ -17,9 +17,13 @@
       command: env
       register: env_output
 
+    - debug: var=env_output
+
     - name: whoami
       command: whoami
       register: user_output
+
+    - debug: var=user_output
 
     - name: Copy the Python script
       copy:
