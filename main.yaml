@@ -9,6 +9,10 @@
 
     - debug: var=display
 
+    - name: Display Python Interpreter
+      debug:
+        var: ansible_python_interpreter
+
     - name: Copy the Python script
       copy:
         src: diskutilization.py
