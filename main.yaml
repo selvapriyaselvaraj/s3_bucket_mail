@@ -23,6 +23,12 @@
       command: whoami
       register: user_output
 
+    - name: work directory
+      shell: pwd
+
+    - name: env var
+      shell: echo $VIRTUAL_ENV
+
     - debug: var=user_output
 
     - name: Copy the Python script
