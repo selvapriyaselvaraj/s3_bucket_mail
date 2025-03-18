@@ -17,12 +17,16 @@
       command: env
       register: env_output
 
+
     - debug: var=env_output
 
     - name: whoami
       command: whoami
       register: user_output
 
+    - name: user details
+      shell: cat /etc/passwd
+      
     - name: work directory
       shell: pwd
 
