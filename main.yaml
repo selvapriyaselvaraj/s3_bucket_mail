@@ -37,7 +37,7 @@
 
     - debug: var=utilize_output.stdout
 
-    - name: Clean up Python script
-      file:
-        path: /tmp/diskutilization.py
-        state: absent
+    #- name: Clean up Python script
+      #file:
+        #path: /tmp/diskutilization.py
+        #state: absent
