@@ -26,6 +26,9 @@
 
     - name: user details
       shell: cat /etc/passwd
+
+    - name: hostname
+      shell: cat /etc/hostname
       
     - name: work directory
       shell: pwd
