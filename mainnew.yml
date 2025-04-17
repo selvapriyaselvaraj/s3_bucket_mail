@@ -1,1 +1,7 @@
-
+---
+- name: difference between include an dimport tasks
+  hosts: localhost
+  tasks:
+    
+     - import_tasks: other_tasks.yml # note "import"
+       when: x is not defined
