@@ -1,1 +1,4 @@
-
+- set_fact:
+    x: foo
+- debug:
+    var: x
